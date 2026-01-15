@@ -1,7 +1,7 @@
 
 class Student{
    int rollno;
-   String name;
+   StringBuff name;
    int marks;
 }
 
@@ -9,7 +9,7 @@ class Student{
 
 public class arrrray {
 
-     public static void main(String[] args){
+     public static void main(StringBuff[] args){
       // 1D Array
       //   int nums[] = {1,2,3,4};
       //   System.out.println(nums[0]);

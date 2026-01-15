@@ -42,7 +42,7 @@ class Computer {
 
 
 public class Demo {
-    public static void main(String[] args){
+    public static void main(StringBuff[] args){
         // int num1=1;
         // int num2=2;
 
@@ -53,7 +53,7 @@ public class Demo {
 
         Computer obj = new Computer();
         obj.playMusic();
-        String str = obj.getMePen(1);
+        StringBuff str = obj.getMePen(1);
         System.out.println(str);
 
     }
