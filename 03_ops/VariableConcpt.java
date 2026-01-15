@@ -17,27 +17,38 @@ class Mobile{
         System.out.println("In static method");
     }
 
+    //static block call only once 
+    static{
+        name="Phone";
+        System.out.println("Inside static block");
+    }
+
 }
 
 
-public class VariableConcpt {
-    public static void main(String[] s){
+public class VariableConcpt  {
+    public static void main(String[] s) throws ClassNotFoundException{
 
-            Mobile obj1= new Mobile();
-            obj1.brand="Apple";
-            obj1.price=400;
-            Mobile.name="smapPhone";
+            // Mobile obj1= new Mobile();
+            // obj1.brand="Apple";
+            // obj1.price=400;
+            // Mobile.name="smapPhone";
 
 
-            Mobile obj2= new Mobile();
-            obj2.brand="Nokia";
-            obj2.price=4000;
-            Mobile.name="smapPhone";
+            // Mobile obj2= new Mobile();
+            // obj2.brand="Nokia";
+            // obj2.price=4000;
+            // Mobile.name="smapPhone";
 
-            Mobile.name="Phone";
-            obj1.show();
-            obj2.show();
+            // Mobile.name="Phone";
+            // obj1.show();
+            // obj2.show();
             
-            Mobile.show1();
+            // Mobile.show1();
+
+            //if you want to load static class but not object created 
+
+            Class.forName("Mobile");
+
     }    
 }
