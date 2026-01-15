@@ -53,7 +53,7 @@ public class Demo {
 
         Computer obj = new Computer();
         obj.playMusic();
-        StringBuff str = obj.getMePen(1);
+        String str = obj.getMePen(1);
         System.out.println(str);
 
     }
