@@ -34,10 +34,27 @@ public class QuestionService {
             Scanner sc = new Scanner(System.in);
             selection[i] =  sc.nextLine();
             i++;
+            System.out.println("---------------");
         }
         
         for(String s : selection){
             System.out.println(s);
         }
+    }
+
+    public void printScore(){
+        int score =0;
+        for(int i=0; i<questions.length; i++){
+            Question que = questions[i];
+            String actualAnswer = que.getAnswer();
+
+            String userAnswer = selection[i];
+
+            if(actualAnswer.equals(userAnswer)){
+                score++;
+            }
+
+        }
+        System.out.println("Your score is: " + score);
     }
 }
