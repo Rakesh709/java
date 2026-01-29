@@ -17,6 +17,10 @@ public class ExceptionJava {
 
         try{
             j = 18/i;
+        }catch(ArithmeticException e){
+            System.out.println("Something went wrong");
+        }catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("stay in limit");
         }catch(Exception e){
             System.out.println("Something went wrong");
         }
@@ -24,3 +28,12 @@ public class ExceptionJava {
         System.out.println("Bye");
     }
 };
+
+
+// Exception Hierarchy
+
+//object  -> throwable
+
+// 1. error  --> thread death ->ioerror -> virtual machine error -> out of memmory error 
+
+//2. Exception -> runtimeexception(_unchecked error ) -> SQL exception (forced you to handle it checked )
