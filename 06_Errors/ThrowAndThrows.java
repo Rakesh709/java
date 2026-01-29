@@ -1,3 +1,12 @@
+
+
+class RakeshException extends Exception{
+    public RakeshException(String string){
+        super(string);
+    }
+}
+
+
 public class ThrowAndThrows {
     public static void main(String[] args) {
         int i=20;
@@ -6,8 +15,9 @@ public class ThrowAndThrows {
         try{
             j = 18/i;
             if(j==0)
-                throw new ArithmeticException("I don't want to print zero");
-        }catch(ArithmeticException e){
+                throw new RakeshException("This is defaut value");
+                // throw new ArithmeticException("I don't want to print zero");
+        }catch(RakeshException e){
             System.out.println("this is default output"+ e);
         }catch(ArrayIndexOutOfBoundsException e){
             System.out.println("stay in limit");
