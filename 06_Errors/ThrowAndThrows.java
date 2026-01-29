@@ -28,3 +28,6 @@ public class ThrowAndThrows {
         System.out.println("Bye");
     }
 }
+
+
+// to track the error just print e.printStackTrace()
