@@ -1,8 +1,22 @@
 package org.rakesh;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Column;
+import jakarta.persistence.Table;
+
+
+@Entity
+@Table(name = "student")
 public class Student {
+    @Id
+    @Column(name = "rollno")
     private  int rollNo;
+
+    @Column(name = "sname")
     private String sName;
+
+    @Column(name = "age")
     private  int age;
 
     public int getRollNo() {
