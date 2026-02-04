@@ -13,9 +13,9 @@ public class Main {
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
 
         Student s1 = new Student();
-        s1.setRollNo(101);
-        s1.setsName("Rakesh");
-        s1.setAge(30);
+        s1.setRollNo(103);
+        s1.setsName("Galaxy");
+        s1.setAge(33);
         Configuration cfg = new Configuration();
         cfg.addAnnotatedClass(Student.class);
         cfg.configure("hibernate.cfg.xml");
@@ -26,6 +26,8 @@ public class Main {
         session.persist(s1);
 
         transaction.commit();
+        session.close();
+        sf.close();
         System.out.println(s1);
 
 
