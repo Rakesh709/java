@@ -16,9 +16,9 @@ public class DemoJdbc {
 
           */
 
-        String url = "jdbc:postgresql://localhost:5432/demo";
-        String uname = "postgres";
-        String pass = "1111";
+        String url = "jdbc:postgresql://localhost:5050/Demo";
+        String uname = "sdmin";
+        String pass = "admin123";
         String sql = "select sname from student where sid = 1";
 
         Class.forName("org.postgresql.Driver");
@@ -32,7 +32,7 @@ public class DemoJdbc {
 
         rs.next();
 
-        String name = rs.getString("sname");
+        String name = rs.getString("Fname");
 
         System.out.println(rs.next());
         con.close();

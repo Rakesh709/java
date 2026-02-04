@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b427b4bd-7994-4fc1-9c56-1ca816ac362d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../08_maven/JDBC/src/DemoJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/../08_maven/JDBC/src/DemoJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
