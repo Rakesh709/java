@@ -13,11 +13,11 @@ public class Main {
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
 
         Student s1 = new Student();
-        s1.setRollNo(103);
-        s1.setsName("Galaxy");
-        s1.setAge(33);
+//        s1.setRollNo(106);
+//        s1.setsName("avng");
+//        s1.setAge(40);
 
-        Student s2= null;
+        //Student s2= null;
 
         Configuration cfg = new Configuration();
         cfg.addAnnotatedClass(Student.class);
@@ -27,15 +27,23 @@ public class Main {
         SessionFactory sf = cfg.buildSessionFactory();
         Session session = sf.openSession();
 
-        //Transaction transaction = session.beginTransaction();
+        //delete
+        s1 = session.find(Student.class, 106);
+
+        Transaction transaction = session.beginTransaction();
         //no need transaction need when do some update and all
 
         //session.persist(s1);
 
-        s2 = session.find(Student.class, 101);
+        //s2 = session.find(Student.class, 101);
 
+        //to update
+        //session.merge(s1);
 
-        //transaction.commit();
+        //to delete
+        session.remove(s1);
+
+        transaction.commit();
         session.close();
         sf.close();
         //System.out.println(s1);
