@@ -53,10 +53,17 @@ public class Main {
 
         //second table
 
+         Laptop l1= new Laptop();
+         l1.setBrand("Dell");
+         l1.setName("Inpiron");
+         l1.setRam(16);
+
+
         Alien a1 = new Alien();
         a1.setAid(101);
         a1.setAname("Rakesh");
         a1.setTech("Java");
+        a1.setLaptop(l1);
 
 
         SessionFactory sf = new Configuration()

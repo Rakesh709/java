@@ -5,7 +5,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "alien_table_2")
 public class Alien {
 
 
@@ -17,6 +16,28 @@ public class Alien {
     private  int aid;
     private  String aname;
     private  String tech;
+    private Laptop laptop;
+
+    @Override
+    public String toString() {
+        return "Alien{" +
+                "aid=" + aid +
+                ", aname='" + aname + '\'' +
+                ", tech='" + tech + '\'' +
+                ", laptop=" + laptop +
+                '}';
+    }
+
+
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
+    }
+
+
 
 
     public int getAid() {
@@ -45,12 +66,5 @@ public class Alien {
 
 
 
-    @Override
-    public String toString() {
-        return "Alien{" +
-                "aid=" + aid +
-                ", aname='" + aname + '\'' +
-                ", tech='" + tech + '\'' +
-                '}';
-    }
+
 }
