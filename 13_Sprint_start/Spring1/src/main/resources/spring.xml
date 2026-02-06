@@ -9,14 +9,22 @@
 
     <bean id="alien" class="org.example.Alien" >
 
-        <property name="age" value="35"></property>
-        <property name="lap" ref="laptop"></property>
+<!--        <property name="age" value="35"></property>-->
+        <property name="lap" ref="laptop"/>
+
+
+        <constructor-arg value="66"/>
+
+        <constructor-arg  ref="laptop" />
+
     </bean>
 
     <bean id="laptop" class="org.example.Laptop"></bean>
 
 </beans>
 
+
+<!--property tag use setter to assign value-->
 
 
 
