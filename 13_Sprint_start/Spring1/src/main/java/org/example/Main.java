@@ -11,13 +11,13 @@ public class Main {
         //below one will create a container in spring.xml -> create a object as well
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         Alien obj1 = (Alien) context.getBean("alien");
-        obj1.age=24;
-        System.out.println(obj1.age);
-        //obj1.code();
+//        obj1.setAge(25);
+        System.out.println(obj1.getAge());
+        obj1.code();
 
-        Alien obj2 = (Alien) context.getBean("alien");
-        obj2.age=25;
-        System.out.println(obj2.age);
+//        Alien obj2 = (Alien) context.getBean("alien");
+//        obj2.age=25;
+//        System.out.println(obj2.age);
         //obj2.code();
 
     }
