@@ -1,4 +1,4 @@
-package com.rakesh.springboot;
+package com.rakesh.springboot.model;
 
 import org.springframework.stereotype.Component;
 
