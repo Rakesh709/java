@@ -1,6 +1,6 @@
-<%@page language="java" %>
+<%@ page language="java"%>
 
-<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="UTF-8">
