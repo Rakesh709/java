@@ -1,14 +1,12 @@
 package com.rakesh.JobApp;
-
-
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class JobController {
 
-    @RequestMapping({"/","home"})
-    public  String home(){
-        return  "home";
+    @GetMapping({"/", "/home"})
+    public String home() {
+        return "home"; // will open home.html
     }
 }
