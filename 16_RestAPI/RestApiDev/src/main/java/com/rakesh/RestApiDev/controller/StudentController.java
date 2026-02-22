@@ -13,4 +13,9 @@ public class StudentController {
         return new StudentDto(4L,"Rakesh","rakesh@gmail.com");
     }
 
+    @GetMapping("/student/{id}")
+    public StudentDto getStudentById(){
+        return new StudentDto(4L,"BUCKET","bucket@gmail.com");
+    }
+
 }
