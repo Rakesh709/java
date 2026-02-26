@@ -21,10 +21,10 @@ public class StudentController {
         this.studentRepository = studentRepository;
     }
 
-    @GetMapping("/student")
-    public List<Student> getStudent(){
-        return studentRepository.findAll();
-    }
+//    @GetMapping("/student")
+//    public List<Student> getStudent(){
+//        return studentRepository.findAll();
+//    }
 
 
     @GetMapping("/student/{id}")
